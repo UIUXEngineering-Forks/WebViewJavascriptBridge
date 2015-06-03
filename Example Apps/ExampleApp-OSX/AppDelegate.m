@@ -68,7 +68,7 @@
     
     
     // Load Page
-    NSString* htmlPath = [[NSBundle mainBundle] pathForResource:@"ExampleApp" ofType:@"html"];
+    NSString* htmlPath = [[NSBundle mainBundle] pathForResource:@"ExampleApp" ofType:@"html" inDirectory:@"web"];
     NSString* html = [NSString stringWithContentsOfFile:htmlPath encoding:NSUTF8StringEncoding error:nil];
     [[_webView mainFrame] loadHTMLString:html baseURL:nil];
 }
